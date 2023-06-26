@@ -1,0 +1,821 @@
+.user-dashbord {
+  padding: 70px 0px 70px;
+  }
+  .user-dashbord .user-profile-info-area {
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+    .user-dashbord .user-profile-info-area .img {
+      text-align: center;
+      padding: 40px 30px 10px; }
+    .user-dashbord .user-profile-info-area .mail {
+      font-size: 14px;
+      color: #29293a; }
+    .user-dashbord .user-profile-info-area .name {
+      color: #29293a;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 0px; }
+    .user-dashbord .user-profile-info-area .links {
+      padding: 12px 30px 25px; }
+      .user-dashbord .user-profile-info-area .links li {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.342); }
+        .user-dashbord .user-profile-info-area .links li:last-child {
+          border: 0px; }
+        .user-dashbord .user-profile-info-area .links li.active a, .user-dashbord .user-profile-info-area .links li:hover a {
+          color: #ff5500;
+          -webkit-transition: all .3s linear;
+          -o-transition: all .3s linear;
+          transition: all .3s linear; }
+        .user-dashbord .user-profile-info-area .links li a {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 40px; }
+  .user-dashbord .user-profile-details .mycard {
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px 40px 30px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    background: #ff5500;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff5500), to(#fac0a2));
+    background-image: -webkit-linear-gradient(left, #ff5500, #fac0a2);
+    background-image: -o-linear-gradient(left, #ff5500, #fac0a2);
+    background-image: linear-gradient(to right, #ff5500, #fac0a2); }
+    .user-dashbord .user-profile-details .mycard .left {
+      position: inherit;
+      z-index: 9; }
+      .user-dashbord .user-profile-details .mycard .left .title {
+        font-size: 22px;
+        color: #fff;
+        line-height: 32px;
+        margin-bottom: 2px; }
+      .user-dashbord .user-profile-details .mycard .left .number {
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 600;
+        display: block;
+        color: #fff;
+        margin-bottom: 20px; }
+      .user-dashbord .user-profile-details .mycard .left .link {
+        width: 80px;
+        height: 30px;
+        background: #fff;
+        border-radius: 50px;
+        line-height: 30px;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
+        .user-dashbord .user-profile-details .mycard .left .link:hover {
+          background: #000;
+          color: #fff; }
+    .user-dashbord .user-profile-details .mycard .right .icon {
+      font-size: 80px;
+      color: #fff;
+      position: inherit;
+      z-index: 9; }
+    .user-dashbord .user-profile-details .mycard::after {
+      position: absolute;
+      content: " ";
+      width: 268px;
+      height: 500px;
+      top: -100px;
+      right: -100px;
+      -webkit-transform: rotate(28deg);
+      -ms-transform: rotate(28deg);
+      transform: rotate(28deg);
+      background: #143250; }
+  .user-dashbord .user-profile-details .account-info {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 30px 30px; }
+    .user-dashbord .user-profile-details .account-info .header-area {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      padding-bottom: 12px; }
+      .user-dashbord .user-profile-details .account-info .header-area .title {
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 600;
+        color: #143250; }
+    .user-dashbord .user-profile-details .account-info .edit-info-area {
+      margin-top: 15px; }
+      .user-dashbord .user-profile-details .account-info .edit-info-area .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .user-dashbord .user-profile-details .account-info .edit-info-area .header .title {
+          font-size: 16px;
+          font-weight: 600;
+          color: #29293a; }
+        .user-dashbord .user-profile-details .account-info .edit-info-area .header .edit-link {
+          font-size: 14px; }
+      .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .input-field {
+        margin-bottom: 20px;
+        background: none;
+        border-radius: 0px;
+        border: 0px!important;
+        padding: 0px 0px!important;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1)!important;
+       }
+        .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .input-field:focus {
+          border: 0px !important;
+          border-bottom: 1px solid #ff5500 !important; }
+        .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .input-field.textarea {
+          margin-bottom: 35px; }
+      .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .form-links {
+        margin-top: 20px; }
+      .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .back {
+        width: 120px;
+        height: 50px;
+        background: #143250;
+        color: #fff;
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        border: 0px;
+        display: inline-block;
+        margin-right: 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
+        .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .back:hover {
+          background: #ff5500; }
+      .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .submit-btn {
+        width: 120px;
+        height: 50px;
+        background: #ff5500;
+        color: #fff;
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        border: 0px;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
+        .user-dashbord .user-profile-details .account-info .edit-info-area .edit-info-area-form .submit-btn:hover {
+          background: #143250; }
+    .user-dashbord .user-profile-details .account-info .main-info {
+      margin-top: 15px; }
+      .user-dashbord .user-profile-details .account-info .main-info .title {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600; }
+      .user-dashbord .user-profile-details .account-info .main-info .list li p {
+        margin-bottom: 0px;
+        font-size: 14px;
+        line-height: 24px; }
+        .user-profile-details .header-area .mybtn1 {
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 15px;
+    margin-left: 10px;
+}
+  .user-dashbord .user-profile-details .order-history {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 30px 30px; }
+    .user-dashbord .user-profile-details .order-history .header-area {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      padding-bottom: 10px; }
+      .user-dashbord .user-profile-details .order-history .header-area .title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #143250; }
+    .user-dashbord .user-profile-details .order-history .table th {
+      border-top: 0px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #29293a; }
+    .user-dashbord .user-profile-details .order-history .table td {
+      border-top: 0px;
+      font-size: 14px;
+      font-weight: 4600; }
+    .user-dashbord .user-profile-details .order-history .table thead th {
+      vertical-align: bottom;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  .user-dashbord .user-profile-details .order-details {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 30px 30px; }
+    .user-dashbord .user-profile-details .order-details .header-area {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      padding-bottom: 10px;
+      margin-bottom: 20px; }
+      .user-dashbord .user-profile-details .order-details .header-area .title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #143250; }
+    .user-dashbord .user-profile-details .order-details .view-order-page .order-code {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px; }
+    .user-dashbord .user-profile-details .order-details .view-order-page .print-order a {
+      background: #ff5500;
+      color: #fff;
+      padding: 10px 20px; }
+    .user-dashbord .user-profile-details .order-details .view-order-page .shipping-add-area h5,
+    .user-dashbord .user-profile-details .order-details .view-order-page .billing-add-area h5,
+    .user-dashbord .user-profile-details .order-details .view-order-page .table-responsive h5 {
+      font-size: 18px;
+      font-weight: 600; }
+    .user-dashbord .user-profile-details .order-details .view-order-page .billing-add-area {
+      margin-bottom: 10px; }
+    .user-dashbord .user-profile-details .order-details .view-order-page address,
+    .user-dashbord .user-profile-details .order-details .view-order-page p {
+      font-size: 14px; }
+    .user-dashbord .user-profile-details .order-details .view-order-page .veiw-details-table td {
+      font-size: 14px; }
+    .user-dashbord .user-profile-details .order-details .back-btn {
+      background: #143250;
+      color: #fff;
+      padding: 8px 25px;
+      margin-top: 15px;
+      display: inline-block; }
+
+.upload-img {
+  padding: 18px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .upload-img .img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    margin-right: 30px;
+    overflow: hidden;
+    }
+  .upload-img .file-upload-area {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .upload-img .file-upload-area .upload-file {
+      width: 150px !important;
+      height: 40px;
+      cursor: pointer;
+      position: relative; }
+      .upload-img .file-upload-area .upload-file .upload {
+        width: 150px !important;
+        height: 40px;
+        display: inline-block;
+        opacity: 0;
+        cursor: pointer; }
+      .upload-img .file-upload-area .upload-file span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px !important;
+        height: 40px;
+        background: #ff5500;
+        z-index: -1;
+        cursor: pointer;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        font-weight: 600; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background: none;
+  font-size: 14px; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none;
+    border: 0px; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+    background: none;
+    border: 0px;
+    outline: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+
+    /*  support Area CSS  */
+.support-ticket-wrapper .panel-body img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%; }
+
+.support-ticket-wrapper .panel-heading {
+  font-size: 16px; }
+
+.support-ticket-wrapper button {
+  border: 0px; }
+
+.support-ticket-wrapper .panel-footer {
+  background-color: #ffffff;
+  padding: 20px 0px 0px; }
+
+.support-ticket-wrapper table tr > td {
+  width: 100%;
+  border-top: none; }
+
+.support-ticket-wrapper .panel {
+  border-color: #dddddd; }
+
+.support-ticket-wrapper .panel,
+.support-ticket-wrapper .panel-heading,
+.support-ticket-wrapper textarea,
+.support-ticket-wrapper button {
+  border-radius: 0; }
+
+.support-ticket-wrapper .ticket-date {
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 0px; }
+
+.single-reply-area.user {
+  background-color: #ddd;
+  padding: 10px; }
+
+.support-ticket-wrapper .panel-body img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%; }
+
+.support-ticket-wrapper .single-reply-area.user {
+  padding: 20px 30px; }
+
+.support-ticket-wrapper .single-reply-area.user .reply-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.support-ticket-wrapper .single-reply-area.user .reply-area .left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.support-ticket-wrapper .single-reply-area.user .reply-area .right {
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 30px; }
+
+.support-ticket-wrapper .single-reply-area.admin {
+  padding: 20px 30px;
+  background: #f1f1f1; }
+
+.support-ticket-wrapper .single-reply-area.admin .reply-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.support-ticket-wrapper .single-reply-area.admin .reply-area .left {
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 30px; }
+
+.support-ticket-wrapper .single-reply-area.admin .reply-area .right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: right; }
+
+
+  /*-----------------------------
+** User Panel Area start
+------------------------------*/
+.user-profile-details .allproduct  .order-status{
+  color: #fff;
+  border-radius: 50px;
+  text-align:center;
+  display:inline-block;
+  padding: 1px 15px;
+
+  }
+  .user-profile-details .allproduct  .order-status.pending{
+  background: orange;
+  }
+  .user-profile-details .allproduct  .order-status.declined{
+  background: red;
+  }
+  .user-profile-details .allproduct  .order-status.completed{
+  background: green;
+  }
+  .user-profile-details .allproduct  .order-status.processing{
+  background: #02abff;
+  }
+  .user-profile-details .allproduct  .order-status.on.delivery{
+  background: #9b14dc;
+  }
+  .user-profile-details .allproduct  .view-order{
+  background: #2d3274;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  display: inline-block;
+  }
+
+  .process-steps-area{
+    margin-bottom: 50px;
+    display: block;
+  }
+  .process-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  }
+  .user-dashbord .user-profile-details .order-details .header-area {
+    display: block;
+    margin-top: 80px;
+  }
+  .process-steps li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  position: relative;
+  }
+
+  .process-steps li .title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #777;
+  margin-top: 8px;
+  }
+
+  .process-steps li .icon {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  background: #efefef;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+  }
+
+  .process-steps li:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: calc(100% - 30px);
+  background: #efefef;
+  top: 14px;
+  z-index: 0;
+  right: calc(50% + 15px);
+  }
+  .process-steps li:first-child::after{
+    display: none;
+  }
+  .process-steps li.done .icon{
+  color: transparent;
+  }
+  .process-steps li.done:after,
+  .process-steps li.active:after,
+  .process-steps li.active .icon{
+  color: #fff;
+  background: #ff5500;
+  }
+  .process-steps li.done .icon:before{
+  position: absolute;
+  content: "";
+  left: 11px;
+  top: 7px;
+  width: 8px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+
+
+  .order-tracking-content .tracking-form{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+  .order-tracking-content .tracking-form input{
+    flex: 1;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+  .order-tracking-content .tracking-form .mybtn1{
+    border: 1px solid #ff5500;
+    margin-left: 30px;
+  }
+
+
+  .order-tracking-content .track-form{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .order-tracking-content .track-form input{
+    flex: 1;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+  .order-tracking-content .track-form .mybtn1{
+    border: 1px solid #ff5500;
+    margin-left: 30px;
+  }
+
+
+
+  .tracking-steps-area{
+    margin-bottom: 100px;
+    display: block;
+  }
+  .tracking-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: left;
+  }
+
+  .tracking-steps li {
+  width: 100%;
+  display: block;
+  text-align: left;
+  position: relative;
+  display: flex;
+  padding-bottom: 50px;
+  }
+  .tracking-steps li .icon{
+    margin-right: 20px;
+  }
+  .tracking-steps li .content{
+    flex: 1;
+  }
+
+  .tracking-steps li .icon {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  background: #efefef;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+  }
+
+  .tracking-steps li:after {
+  position: absolute;
+  content: "";
+  left: 15px;
+  top: 30px;
+  height: calc(100% - 30px);
+  width: 3px;
+  background: #efefef;
+  z-index: 0;
+  }
+
+  .tracking-steps li.done .icon{
+  color: transparent;
+  }
+  .tracking-steps li.done:after,
+  .tracking-steps li.active:after,
+  .tracking-steps li.active .icon{
+  color: #fff;
+  background: #ff5500;
+  }
+
+  .tracking-steps li:last-child{
+  padding-bottom: 0px;
+  }
+  .tracking-steps li:last-child::after{
+    display: none;
+  }
+
+
+  .tracking-steps li.done .icon:before{
+  position: absolute;
+  content: "";
+  left: 11px;
+  top: 7px;
+  width: 8px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+
+  .tracking-steps li .content .title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  .tracking-steps li .content .date{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .tracking-steps li .content .date b{
+    font-weight: 600;
+  }
+  .tracking-steps li .content .details{
+    font-size: 16px;
+  }
+
+  /*-----------------------------
+  ** User Panel Area End
+    -----------------------------*/
+
+
+    /* Circle Info Area Start */
+
+  .c-info-box-area{
+    padding: 40px 30px 38px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .c-info-box-area .c-info-box{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-width: 20px;
+    border-style: solid;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .c-info-box-area .c-info-box p{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 160px;
+  }
+  .c-info-box-area .c-info-box.box1{
+    border-color: #FFBF36;
+  }
+  .c-info-box-area .c-info-box.box2{
+    border-color: #00BCD1;
+  }
+  .c-info-box-area .c-info-box.box3{
+    border-color: #521FB7;
+  }
+  
+  .c-info-box-area .c-info-box.box4{
+    border-color: #129021;
+  }
+  
+  .c-info-box-area .c-info-box-content{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .c-info-box-area .c-info-box-content .title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .c-info-box-area .c-info-box-content .text{
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  
+  .c-info-box-area:hover{
+    transform: translateY(-7px);
+  }
+
+
+  .wish-list {
+    margin-bottom: -30px; }
+    .wish-list .item-filter {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 30px 20px 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .wish-list .item-filter p {
+        margin-bottom: 0px; }
+      .wish-list .item-filter .pagination-area {
+        margin-top: 0px; }
+  
+  .wish-list-area {
+    margin-top: 30px; }
+  
+  .single-wish {
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 30px 30px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .single-wish .remove {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 25px;
+      height: 25px;
+      width: 25px;
+      -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+      background: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
+      font-size: 14px;
+      color: #888;
+      -webkit-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in;
+      cursor: pointer; }
+      .single-wish .remove:hover {
+        color: #fff;
+        background: #ff5500; }
+    .single-wish .left {
+      margin-right: 20px;
+      width: 150px;
+      height: 150px;
+      -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
+      .single-wish .left img {
+        width: 100%; }
+    .single-wish .right {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .single-wish .right .title {
+        font-weight: 600;
+        font-size: 16px; }
+      .single-wish .right .stars li {
+        display: inline-block; }
+        .single-wish .right .stars li i {
+          font-size: 14px;
+          color: #ff5500; }
+      .single-wish .right .price {
+        font-size: 20px;
+        font-weight: 700;
+        color: #143250;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        }
+        .single-wish .right .price small {
+          font-size: 16px;
+          color: #8d8d8d; }
+      .single-wish .right .store-name {
+        font-size: 14px; }
+        .single-wish .right .store-name i {
+          color: #ff5500;
+          margin-right: 2px; }
+
+          .page-link {
+            position: relative;
+            display: block;
+            padding: .5rem .75rem;
+            margin-left: -1px;
+            line-height: 1.25;
+            color: #007bff;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+        }
+

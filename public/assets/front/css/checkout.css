@@ -1,0 +1,629 @@
+.checkout{
+  overflow: hidden;
+}
+.checkout-area .checkout-process{
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.checkout-area .checkout-process ul{
+  display: inline-block;
+}
+.checkout-area .checkout-process li a.active {
+  background: #0f78f2;
+}
+.checkout-area .checkout-process li{
+  display: inline-block;
+  margin-right: 20px;
+  text-align: left;
+}
+.checkout-area .checkout-process li a{
+  background: #e9ecef;
+  padding: 0px;
+  margin: 0px;
+  line-height: 70px;
+  padding-left: 35px;
+  font-weight: 600;
+  width: 200px;
+  height: 70px;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.checkout-area .checkout-process li a::after{
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  border-top: 35px solid transparent;
+  border-left: 20px solid #ffffff;
+  border-bottom: 35px solid transparent;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.checkout-area .checkout-process li a::before{
+  position: absolute;
+  content: "";
+  left: 100%;
+  top: 0px;
+  border-top: 35px solid transparent;
+  border-left: 20px solid #e9ecef;
+  border-bottom: 35px solid transparent;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+
+.checkout-area .checkout-process li a:hover{
+  background: #0f78f2;
+  color: #fff;
+}
+.checkout-area .checkout-process li a:hover::before{
+  border-left: 20px solid #ff5500;
+}
+.checkout-area .checkout-process li a.active{
+  background: #ff5500;
+  color: #fff;
+}
+.checkout-area .checkout-process li a.active {
+  background: #0f78f2;
+}
+.checkout-area .checkout-process li a.active::before{
+  border-left: 25px solid #0f78f2;
+}
+
+.checkout-area .checkout-process li a span{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #666;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 7px;
+  -webkit-box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.checkout-area .checkout-process li a i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 45px;
+  opacity: 0.1;
+  right: 30px;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.checkout-area .checkout-process li a.active i,
+.checkout-area .checkout-process li a:hover i{
+  opacity: .7;
+  right: 0px;
+  font-size: 34px;
+}
+.checkout-area .checkout-process li a.active span,
+.checkout-area .checkout-process li a:hover span{
+  background: #333;
+}
+
+.checkout-area  .tab-content{
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.checkout-area  .content-box .heading-area{
+  background: #e9ecef;
+  padding: 21px 20px 12px;
+}
+.checkout-area  .content-box .heading-area .title{
+  font-size: 20px;
+  font-weight: 600;
+}
+.checkout-area  .content-box .content{
+  padding: 20px 20px 20px;
+}
+.checkout-area  .content-box .content .title{
+  display: block;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.checkout-area  .content-box .content label {
+  font-size: 16px;
+  font-weight: 600;
+}
+.checkout-area  .content-box .content label sup{
+  color: red;
+}
+.checkout-area  .content-box .content .form-control{
+  height: 45px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+}
+.form-control:focus {
+  border-color: unset!important;
+  outline: 0!important;
+  box-shadow: unset!important;
+}
+
+
+
+
+
+.nice-select.open .list {
+  max-height: 240px;
+  overflow-y: auto;
+  width: auto;
+}
+
+.checkout-area  .content-box .content.form-control {
+  font-size: 14px!important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.checkout-area  .content-box .content .form-control::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgba(24, 42, 17, 0.5); }
+    .checkout-area  .content-box .content .form-control:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgba(24, 42, 17, 0.5); }
+    .checkout-area  .content-box .content .form-control::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgba(24, 42, 17, 0.5); }
+    .checkout-area  .content-box .content .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: rgba(24, 42, 17, 0.5); }
+
+
+.checkout-area  .content-box .content .set-account-pass{
+  margin-top: 10px;
+}
+
+.checkout-area  .content-box .content .billing-address{
+  margin-top: 25px;
+}
+.checkout-area  .content-box .content .ship-diff-addres-area
+{
+  margin-top: 20px;
+}
+
+.checkout-area  .content-box .content .billing-address input,
+.checkout-area  .content-box .content .ship-diff-addres-area input
+{
+  margin-bottom: 10px;
+}
+.checkout-area  .content-box .content .order-area .order-item{
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+/* .checkout-area  .content-box .content .order-area .order-item:last-child{
+  border-bottom: 0px;
+} */
+.checkout-area  .content-box .content .order-area .order-item .product-img img{
+  width: 135px;
+  height: 135px;
+  margin-right: 20px;
+}
+
+.checkout-area  .content-box .content .order-area .order-item .product-content{
+  flex: 1;
+}
+.checkout-area  .content-box .content .order-area .order-item .product-content .name{
+  margin-bottom: 5px;
+}
+.checkout-area  .content-box .content .order-area .order-item .product-content .name a{
+  font-size: 17px;
+  line-height: 24px!important;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+
+.checkout-area  .content-box .content .order-area .order-item .product-content .unit-price,
+.checkout-area  .content-box .content .order-area .order-item .product-content .quantity,
+.checkout-area  .content-box .content .order-area .order-item .product-content .total-price{
+  display: flex;
+}
+.checkout-area  .content-box .content .order-area .order-item .product-content .unit-price .label,
+.checkout-area  .content-box .content .order-area .order-item .product-content .quantity .label,
+.checkout-area  .content-box .content .order-area .order-item .product-content .total-price .label
+{
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 7px;
+  margin-bottom: 0px;
+  color: #666;
+}
+.checkout-area  .content-box .content .order-area .order-item .product-content .unit-price p,
+.checkout-area  .content-box .content .order-area .order-item .product-content .quantity .qttotal,
+.checkout-area  .content-box .content .order-area .order-item .product-content .total-price p
+{
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: #777;
+}
+.checkout-area  .content-box .content .order-area .order-item .product-content .color .item-color,
+.checkout-area  .content-box .content .order-area .order-item .product-content .color .item-color span
+{
+  width: 30px;
+  height: 20px;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.checkout-area  .content-box .content .billing-info-area .info-list li p{
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+.checkout-area  .content-box .content .billing-info-area .info-list li p i{
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  color: #ff5500;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.checkout-area  .content-box .content .payment-information{
+    margin-top: 15px;
+}
+
+.checkout-area  .content-box .content .payment-information .nav a img{
+    width: 80px;
+    height: 40px;
+}
+
+.checkout-area  .content-box .content .payment-information .nav a {
+    padding: 6px 0px 0px 30px;
+    position: relative;
+}
+.checkout-area  .content-box .content .payment-information .nav a .icon{
+    position: absolute;
+    left: 0px;
+    margin-top: 1px;
+}
+
+.checkout-area  .content-box .content .payment-information .nav a span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+.checkout-area  .content-box .content .payment-information .nav a p small{
+    display: block;
+}
+  .checkout-area  .content-box .content .payment-information .nav a span::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff5500;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+
+  }
+.checkout-area  .content-box .content .payment-information .nav a.active span:after{
+    width: 80%;
+    height: 80%;
+}
+.checkout-area  .content-box .content .payment-information .nav a p{
+      display: inline-block;
+      margin-bottom: 0px;
+      position: relative;
+      top: -5px;
+      left: 5px;
+      font-weight: 600;
+}
+.checkout-area  .content-box .content .payment-information .tab-content{
+   margin-top: 20px;
+   box-shadow: unset;
+   padding: 20px 20px 20px 20px;
+
+}
+.checkout-area  .content-box .content .payment-information .tab-content input{
+   margin-bottom: 15px;
+}
+
+.order-box .final-price{
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  padding-top: 5px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+input[type=checkbox] + label {
+  display: block;
+  cursor: pointer;
+  font-size: 14px!important;
+  margin-top: 4px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 01px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+  margin-right: 10px;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: #ff5500;
+  border-color: #ff5500;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #9e9e9e;
+  border-color: #9e9e9e;
+}
+
+
+.checkout {
+  padding: 70px 0px 70px;
+  }
+
+
+  .radio-design {
+      display: block;
+      position: relative;
+      padding-left: 0px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 7px;;
+    }
+    .radio-design label{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        position: relative;
+        top: -4px;
+        left: 35px;
+    }
+
+    .radio-design label small{
+        display: block;
+    }
+    /* Hide the browser's default radio button */
+    .radio-design input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+    }
+    .cupon-box #coupon-link img{
+        width: 25px;
+        margin-right: 5px;
+    }
+    /* Create a custom radio button */
+
+    .radio-design .checkmark {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      border: 1px solid rgba(0, 0, 0, 0.20);
+      top: -2px;
+    }
+    .radio-design .checkmark::after{
+      position: absolute;
+      content: "";
+      width: 0%;
+      height: 0%;
+      border-radius: 50%;
+      top:50%;
+      left: 50%;
+      z-index: 99;
+      transform: translate(-50%, -50%);
+      background: #ff5500;
+      -webkit-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in;
+    }
+
+    /* On mouse-over, add a grey background color */
+
+    /* When the radio button is checked, add a blue background */
+    .radio-design input:checked ~ .checkmark::after {
+      width: 80%;
+      height: 80%;
+    }
+
+
+
+    .tempcart{
+      background: #e9ecef;
+      padding: 70px 0px 70px;
+  }
+  .tempcart .content-box{
+      background: #fff;
+      padding: 50px 50px 50px;
+      box-shadow: 3px 3px 14px 3px rgba(0, 0, 0, 0.10);
+  }
+  #tempview{
+      margin-left: 0px!important;
+  }
+
+  .tempcart .view-order-page h5{
+        font-weight: 600;
+      font-size: 16px;
+  }
+
+  .tempcart .view-order-page h4{
+         font-weight: 600;
+      font-size: 20x;
+  }
+
+/*-----------------------------
+** Check Out Area Start
+------------------------------*/
+.order-box {
+
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px 25px 40px; }
+  .order-box .title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #143250;
+      line-height: 28px;
+      margin-bottom: 15px; }
+   .order-box .order-list {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  .order-box .order-list li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+       .order-box .order-list li p {
+          font-size: 14px;
+          font-weight: 600; }
+       .order-box .order-list li p b {
+            font-weight: 700; }
+   .order-box .total-price {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-weight: 600;
+      padding-top: 5px; }
+    .cupon-box {
+      text-align: center;
+      margin-bottom: 30px; }
+      .cupon-box #coupon-link {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 25px;
+        text-decoration: underline;
+        cursor: pointer; }
+      .cupon-box #coupon-form {
+        display: none; }
+       .cupon-box #coupon-form.show {
+          display: block !important; }
+         .cupon-box #coupon-form input {
+          width: 190px;
+          height: 35px;
+          background: #f3f8fc;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 0px 10px;
+          font-size: 14px; }
+        .cupon-box #coupon-form button {
+          width: 80px;
+          height: 35px;
+          background: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          font-size: 14px;
+          text-transform: uppercase;
+          cursor: pointer;
+          -webkit-transition: all 0.3s ease-in;
+          -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in; }
+           .cupon-box #coupon-form button:hover {
+            background: #ff5500;
+            color: #fff;
+            border-color: #ff5500; }
+
+      .cupon-box #check-coupon-form {
+        display: none; }
+       .cupon-box #check-coupon-form.show {
+          display: block;
+          }
+         .cupon-box #check-coupon-form input {
+          width: 190px;
+          height: 35px;
+          background: #f3f8fc;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 0px 10px;
+          font-size: 14px; }
+        .cupon-box #check-coupon-form button {
+          width: 80px;
+          height: 35px;
+          background: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          font-size: 14px;
+          text-transform: uppercase;
+          cursor: pointer;
+          -webkit-transition: all 0.3s ease-in;
+          -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in; }
+           .cupon-box #check-coupon-form button:hover {
+            background: #ff5500;
+            color: #fff;
+            border-color: #ff5500; }
+
+     .order-box .order-btn {
+      width: 190px;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      background: #ff5500;
+      display: block;
+      margin-bottom: 0px;
+      text-align: center;
+      margin: 0 auto;
+      -webkit-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+     .order-box .order-btn:hover {
+        background: #143250; }

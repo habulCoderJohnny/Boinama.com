@@ -1,0 +1,185 @@
+/*---------------------------
+** Contact Us  Area Start
+---------------------------*/
+.contact-us {
+  padding: 65px 0px 70px;
+  }
+  .contact-us .contact-section-title .subtitle {
+    color: #143250;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 600;
+
+    margin-bottom: 6px; }
+  .contact-us .contact-section-title .title {
+    color: #ff5500;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+
+    margin-bottom: 13px; }
+  .contact-us .contact-section-title .text {
+    color: #777; }
+  .contact-us .left-area {
+    background: #fff; }
+  .contact-us .left-area .contact-form {
+    margin-top: 12px;
+    padding: 30px 20px 30px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(14, 35, 107, 0.15);
+    box-shadow: 0px 0px 5px 0px rgba(14, 35, 107, 0.15); }
+    .contact-us .left-area .contact-form ul {
+      padding-left: 0px;
+      margin-bottom: 0px; }
+      .contact-us .left-area .contact-form ul li {
+        list-style: none; }
+          .contact-us .left-area .contact-form .form-input {
+            position: relative;
+            margin-bottom: 15px; }
+            .contact-us .left-area .contact-form .form-input input {
+              width: 100%;
+              height: 60px;
+              background: #f3f8fc;
+              padding: 0px 30px 0px 45px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              font-size: 14px;
+              margin-bottom: 0px;
+            }
+            .contact-us .left-area .contact-form .form-input textarea{
+              width: 100%;
+              height: 150px;
+              background: #f3f8fc;
+              padding: 8px 20px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              font-size: 14px;
+              margin-bottom: 0px;
+            }
+              .contact-us .left-area .contact-form .form-input i {
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              left: 15px;
+              color: #ff5500;
+            }
+            .contact-us .left-area .contact-form ul li .input-field.textarea {
+              margin-bottom: 35px; }
+
+      .contact-us .left-area .contact-form .captcha-area li img {
+        max-width: 225px;
+        display: inline-block; }
+      .contact-us .left-area .contact-form .captcha-area li i {
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 22px;
+        color: #777; }
+      .contact-us .left-area .contact-form .captcha-area li .input-field {
+        margin-bottom: 20px;
+        background: none;
+        max-width: 225px;
+        border-radius: 0px;
+        border: 0px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; }
+        .contact-us .left-area .contact-form .captcha-area li .input-field:focus {
+          border: 0px !important;
+          border-bottom: 1px solid #ff5500 !important; }
+      .contact-us .left-area .contact-form .submit-btn {
+        width: 213px;
+        height: 50px;
+        background: #ff5500;
+        color: #fff;
+        font-size: 16px;
+        line-height: 47px;
+        text-align: center;
+        border: 1px solid #ff5500;
+        border-radius: 50px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        }
+        .contact-us .left-area .contact-form .submit-btn:hover {
+          background: none;
+          color: #ff5500;
+          }
+  .contact-us .right-area .top-content {
+    margin-bottom: 23px; }
+    .contact-us .right-area .top-content .title {
+      font-size: 28px;
+      line-height: 28px;
+      color: #143250;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .contact-us .right-area .top-content .text {
+      color: #333333; }
+  .contact-us .right-area .contact-info {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(14, 35, 107, 0.15);
+    box-shadow: 0px 0px 5px 0px rgba(14, 35, 107, 0.15);
+    border-bottom: 2px solid #ff5500;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .contact-us .right-area .contact-info .left {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+      .contact-us .right-area .contact-info .left .icon {
+        width: 70px;
+        height: 70px;
+        background: #ff5500;
+        text-align: center;
+        line-height: 70px;
+        font-size: 28px;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 20px;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
+    .contact-us .right-area .contact-info .content {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .contact-us .right-area .contact-info .content a {
+        display: block;
+        margin-bottom: 0px; }
+      .contact-us .right-area .contact-info .content p {
+        margin-bottom: 0px; }
+    .contact-us .right-area .contact-info:hover {
+      -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); }
+      .contact-us .right-area .contact-info:hover .icon {
+        font-size: 32px; }
+  .contact-us .right-area .social-links .title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #143250;
+    margin-top: -5px;
+    margin-bottom: 18px; }
+  .contact-us .right-area .social-links ul {
+    padding-left: 0px;
+    margin-bottom: 0px; }
+    .contact-us .right-area .social-links ul li {
+      display: inline-block; }
+      .contact-us .right-area .social-links ul li a {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        margin: 0px 3px;
+        color: #fff;
+        -webkit-transition: 0.3s ease-in;
+        -moz-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in; }

@@ -1,0 +1,47 @@
+.vendor-banner {
+    background: url(../images/Vendor-pages.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 66px 0px 60px;
+    }
+    .vendor-banner .title {
+      font-size: 46px;
+      line-height: 60px;
+      font-weight: 700;
+      color: #fff; }
+    .vendor-banner .sub-title {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0px; }
+  
+  .vendor-top-header {
+    margin-top: 50px; }
+    .vendor-top-header .content {
+      padding: 25px 0px 11px;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+      .vendor-top-header .content .single-box.mymedia {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .vendor-top-header .content .single-box.mymedia .info {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-item-align: center;
+          align-self: center; }
+      .vendor-top-header .content .single-box .icon {
+        font-size: 38px;
+        color: #ff5500;
+        margin-right: 10px; }
+      .vendor-top-header .content .single-box .info .title {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600; }
+      .vendor-top-header .content .single-box .info .text {
+        font-size: 14px;
+        margin-top: 7px; }
+  

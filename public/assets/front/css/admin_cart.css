@@ -1,0 +1,196 @@
+/*-----------------------------
+** Cart Page CSS Start
+------------------------------*/
+
+     .table thead {
+      border: 1px solid rgba(0, 0, 0, 0.2); }
+       .table thead tr th {
+        border-bottom: 0px; }
+     .table tbody tr {
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+       .table tbody tr td {
+        border-top: 0px;
+        vertical-align: middle; }
+         .table tbody tr td.product-img {
+          width: 190px;
+          text-align: center; }
+           .table tbody tr td.product-img p {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600; }
+         .table tbody tr td.size .item-size {
+          margin-bottom: 10px; }
+           .table tbody tr td.size .item-size select {
+            width: 70px;
+            height: 30px; }
+         .table tbody tr td.size .item-color select {
+          width: 70px;
+          height: 30px; }
+           .table tbody tr td.size .item-color select option {
+            width: 70px;
+            height: 30px;
+            display: inline-block; }
+             .table tbody tr td.size .item-color select option.red {
+              background: red; }
+             .table tbody tr td.size .item-color select option.blue {
+              background: blue; }
+             .table tbody tr td.size .item-color select option.green {
+              background: green; }
+         .table tbody tr td.quantity .qty {
+          display: inline-block;
+          float: left; }
+           .table tbody tr td.quantity .qty ul li {
+            margin-right: -4px;
+            display: inline-block; }
+             .table tbody tr td.quantity .qty ul li:first-child {
+              margin-left: 0px; }
+             .table tbody tr td.quantity .qty ul li .qttotal1,  .table tbody tr td.quantity .qty ul li .qtminus1,  .table tbody tr td.quantity .qty ul li .qtplus1 {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              border: 1px solid rgba(144, 144, 144, 0.4);
+              text-align: center;
+              line-height: 30px;
+              font-size: 14px;
+              cursor: pointer;
+              font-weight: 500; }
+               .table tbody tr td.quantity .qty ul li .qttotal1:focus,  .table tbody tr td.quantity .qty ul li .qtminus1:focus,  .table tbody tr td.quantity .qty ul li .qtplus1:focus {
+                outline: 0px; }
+             .table tbody tr td.quantity .qty ul li .qtminus1:hover,  .table tbody tr td.quantity .qty ul li .qtplus1:hover {
+              background: #ff5500;
+              color: #fff;
+              border-color: #ff5500; }
+             .table tbody tr td.quantity .qty ul li .qttotal {
+              width: 40px; }
+             .table tbody tr td.quantity .qty ul li:last-child {
+              margin-right: 10px; }
+         .table tbody tr td.unit-price p {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 0px; }
+         .table tbody tr td.total-price p {
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 0px; }
+         .table tbody tr td .removecart {
+          cursor: pointer;
+          font-size: 16px; }
+  
+  
+  .order-box {
+  
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 40px 25px 40px; }
+    .order-box .title {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #143250;
+        line-height: 28px;
+        margin-bottom: 15px; }
+     .order-box .order-list {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+    .order-box .order-list li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+         .order-box .order-list li p {
+            font-size: 14px;
+            font-weight: 600; }
+         .order-box .order-list li p b {
+              font-weight: 700; }
+     .order-box .total-price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        font-weight: 600;
+        padding-top: 5px; }
+      .cupon-box {
+        text-align: center;
+        margin-bottom: 30px; }
+        .cupon-box #coupon-link {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-bottom: 25px;
+          text-decoration: underline;
+          cursor: pointer; }
+        .cupon-box #coupon-form {
+          display: none; }
+         .cupon-box #coupon-form.show {
+            display: block !important; }
+           .cupon-box #coupon-form input {
+            width: 190px;
+            height: 35px;
+            background: #f3f8fc;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0px 10px;
+            font-size: 14px; }
+          .cupon-box #coupon-form button {
+            width: 80px;
+            height: 35px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in; }
+             .cupon-box #coupon-form button:hover {
+              background: #ff5500;
+              color: #fff;
+              border-color: #ff5500; }
+  
+        .cupon-box #check-coupon-form {
+          display: none; }
+         .cupon-box #check-coupon-form.show {
+            display: block;
+            }
+           .cupon-box #check-coupon-form input {
+            width: 190px;
+            height: 35px;
+            background: #f3f8fc;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0px 10px;
+            font-size: 14px; }
+          .cupon-box #check-coupon-form button {
+            width: 80px;
+            height: 35px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in; }
+             .cupon-box #check-coupon-form button:hover {
+              background: #ff5500;
+              color: #fff;
+              border-color: #ff5500; }
+  
+       .order-box .order-btn {
+        width: 190px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        background: #ff5500;
+        display: block;
+        margin-bottom: 0px;
+        text-align: center;
+        margin: 0 auto;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
+       .order-box .order-btn:hover {
+          background: #143250; }

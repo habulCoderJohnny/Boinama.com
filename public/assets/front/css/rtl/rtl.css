@@ -1,0 +1,348 @@
+.mainmenu-area{
+    direction: rtl;
+}
+.mainmenu-area .categories_menu{
+    text-align: right;
+}
+.mainmenu-area .categories_menu .categories_title h2 i.arrow-down {
+    float: left;
+}
+
+.mainmenu-area .core-nav .wrap-core-nav-list.right {
+    text-align: left;
+}
+
+nav .menu li:first-child a {
+    padding-left: 0px;
+}
+.categories_menu_inner > ul > li{
+    padding-left: 0px;
+}
+.categories_menu_inner > ul > li:hover {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.categories_menu_inner > ul > li.dropdown_list .link-area > a{
+    transform: rotate(-180deg);
+}
+
+.categories_menu_inner > ul > li img {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.hot-and-new-item .categori .item-list li .single-box{
+    direction: rtl;
+}
+
+.hot-and-new-item .categori .item-list li .single-box .left-area {
+    margin-right: 0px;
+    margin-left: 15px;
+}
+.hot-and-new-item .categori .item-list li .single-box .right-area{
+    text-align: right;
+}
+.hot-and-new-item .categori .item-list li .single-box .right-area .stars{
+    text-align: right;
+}
+.review-section .aside .slide-item{
+    direction: rtl;
+}
+
+.review-section .aside .slide-item .top-area img {
+    margin-right: 0px;
+    margin-left: 30px;
+}
+.review-section .aside .slide-item .main-centent{
+    text-align: right;
+}
+.blog-area .blog-box .details{
+    text-align: right;
+}
+.info-area .info-box,
+.recent-post-widget .post-list li .post,
+.info-link-widget .link-list li a
+{
+    direction: rtl;
+}
+
+.info-area .info-box .icon {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.info-area .info-box .info .details,
+.footer .footer-widget .title,
+.footer .footer-info-area .footer-logo,
+.footer .footer-info-area .text,
+.footer .fotter-social-links ul,
+.footer .footer-widget ul li,
+.recent-post-widget .post-list li .post .post-details,
+.product-details-page #product-details-tab .top-menu-area,
+.product-details-page #product-details-tab.ui-tabs .ui-tabs-panel,
+.product-details-page .categori .item-list li .single-box .right-area,
+.product-details-page .categori .item-list li .single-box .right-area .stars
+{
+    text-align: right;
+}
+.recent-post-widget .post-list li .post .post-img {
+    margin-right: 0px;
+    margin-left: 15px;
+}
+.footer .footer-widget ul li i {
+    padding-right: 0px;
+    padding-left: 5px;
+    float: right;
+    transform: rotate(-180deg);
+    position: relative;
+    top: 6px;
+    margin-left: 5px;
+}
+.sub-categori .left-area .filter-result-area .body-area .filter-list li{
+    direction: rtl;
+    text-align: right;
+}
+
+.sub-categori .left-area .filter-result-area .body-area .filter-list li a i{
+    transform: rotate(-180deg);
+}
+
+.product-details-page .right-area .product-info{
+    text-align: right;
+}
+.categories_title h2 i {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.breadcrumb-area .pages{
+    text-align: right;
+    direction: rtl;
+}
+
+.breadcrumb-area .pages li a::after {
+    right: auto;
+    left: -18px;
+    transform: rotate(-180deg);
+}
+
+.breadcrumb-area .pages li a {
+    margin-right: auto;
+    margin-left: 17px;
+}
+
+.blogpagearea .blog-box .details{
+    text-align: right;
+    direction: rtl;
+}
+.blog-details{
+    direction: rtl;
+}
+.blog-details .blog-aside .serch-form button {
+    right: auto;
+    left: 0px;
+}
+.blog-details .blog-aside .serch-form input {
+    padding: 0px 20px 0px 50px;
+}
+
+.blog-details .blog-aside .categori .categori-list li a:hover, .blog-details .blog-aside .categori .categori-list li a.active {
+    padding-left: 0px;
+    padding-right: 5px;
+}
+.blog-details .blog-aside .recent-post-widget .post-list li .post .post-img {
+    margin-right: 0px;
+}
+
+.blog-details .blog-aside .tags .tags-list{
+    text-align: right;
+}
+
+.blog-details .blog-content .content{
+    text-align: right;
+}
+.ui-accordion .ui-accordion-header{
+    text-align: right;
+}
+
+.about .about-info,
+.contact-section-title,
+.contact-us .left-area .contact-form .form-input input,
+.contact-us .left-area .contact-form .form-input textarea,
+.contact-us .left-area .contact-form .form-input,
+.contact-us .left-area .contact-form,
+.contact-us .right-area .contact-info .content,
+.logo-header .helpful-links ul li.my-dropdown .my-dropdown-menu .dropdownmenu-wrapper .dropdown-cart-products .product .product-details .content,
+.checkout-area .content-box .content,
+.checkout-area .content-box .content .form-control
+{
+    text-align: right;
+}
+
+.contact-us .left-area .contact-form{
+    margin-top: 0px;
+}
+.contact-section-title{
+    margin-bottom: 20px;
+}
+.contact-us .right-area .contact-info{
+    direction: rtl;
+}
+.contact-us .right-area .contact-info .left .icon{
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.contact-us .right-area .social-links{
+    text-align: right;
+}
+
+
+.vendor-banner .content{
+    text-align: right;
+}
+.checkout-area .content-box .content select.form-control{
+    direction: rtl;
+}
+.checkout-area .content-box .content .order-area .order-item{
+    direction: rtl;
+}
+.checkout-area .content-box .content .order-area .order-item .product-img img {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.checkout-area .content-box .content .billing-info-area .info-list li p i {
+    left: auto;
+    right: 0px;
+}
+
+.checkout-area .content-box .content .billing-info-area .info-list li p {
+    padding-left: 0px;
+    padding-right: 25px;
+}
+
+
+
+.checkout-area .content-box .content .payment-information .nav a .icon {
+    left: auto;
+    right: 0px;
+}
+
+.checkout-area .content-box .content .payment-information .nav a {
+    padding: 6px 30px 0px 0px;
+}
+
+.compare-page{
+    direction: rtl;
+}
+
+
+.compare-page .com-heading .title{
+    text-align: right;
+}
+
+.compare-page-content-wrap table.table tr td,
+.compare-page-content-wrap .title
+{
+    text-align: right;
+}
+
+
+.user-dashbord .user-profile-info-area .links li a,
+.user-dashbord .user-profile-details .account-info
+{
+    text-align: right;
+    display: block;
+}
+
+.user-dashbord .user-profile-details {
+    direction: rtl;
+    text-align: right;
+}
+.user-dashbord .user-profile-details .order-details .view-order-page .print-order a{
+    display: inline-block;
+}
+.user-dashbord .user-profile-details .order-details .view-order-page .print-order{
+    margin-bottom: 15px;
+}
+
+.order-tracking-content .tracking-form .mybtn1 {
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.message-modal .modal .contact-form ul li .input-field{
+    text-align: right;
+    height: 40px;
+}
+.upload-img .img {
+    margin-right: 0px;
+    margin-left: 30px;
+}
+
+
+
+
+
+.product-details-page .right-area .product-info .custom-control{
+    direction: rtl;
+    padding-left: 0px;
+}
+
+.product-details-page .right-area .product-info .custom-control-label::before {
+    left: auto;
+    right: -1.5rem;
+}
+
+
+
+.product-details-page .right-area .product-info .custom-control-label::after {
+    left: auto;
+    right: -1.5rem;
+}
+
+.product-details-page .right-area .product-info .custom-control{
+    padding-right: 1.5rem;
+}
+
+.logo-header .search-box-wrapper {
+    direction: rtl;
+}
+
+.logo-header .nice-select .option{
+    text-align: right!important;
+}
+
+
+.logo-header .nice-select .list{
+    left: auto !important;
+    right: 0px;
+}
+
+.logo-header .search-box .search-form input {
+    padding: 0px 20px 0px 60px;
+}
+
+.logo-header .search-box .search-form button {
+    right: auto;
+    left: -1px;
+}
+
+.u-login-area .links .sign-in{
+    text-align: right;
+}
+.u-login-area .profilearea.my-dropdown .my-dropdown-menu ul li{
+    text-align: right;
+    direction: rtl;
+}
+
+.u-login-area .profilearea.my-dropdown .my-dropdown-menu ul li a i{
+    transform: rotate(-180deg);
+}
+
+
+
+
+
+
+

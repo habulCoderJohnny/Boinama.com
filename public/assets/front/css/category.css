@@ -1,0 +1,91 @@
+/* Category Area Start */
+.category-page{
+  padding: 70px 0px 70px;
+}
+
+.category-page  .bg-white{
+  background: #fff;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px 30px 30px;
+}
+.category-page  .bg-white .sub-category-menu .category-name a{
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff5500;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  display: block;
+}
+
+
+.category-page  .bg-white .sub-category-menu .parent-category{
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-page  .bg-white .sub-category-menu .parent-category > li{
+  flex: 33.333%;
+  max-width: 33.333%;
+
+}
+.category-page  .bg-white .sub-category-menu .parent-category  li ul li{
+  flex: 100%;
+  max-width: 100%;
+}
+.category-page  .bg-white .sub-category-menu .parent-category  .p-c-title{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+}
+
+
+
+.category-page  .bg-white .sub-category-menu .parent-category  li ul li a i{
+  font-size: 13px;
+  color: #888;
+  margin-right: 6px;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.category-page  .bg-white .sub-category-menu ul li ul li a{
+  font-size: 14px;
+  line-height: 25px;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.category-page  .bg-white .sub-category-menu ul li a{
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.category-page  .bg-white .sub-category-menu ul li a:hover{
+  color: #ff5500;
+}
+.category-page  .bg-white .sub-category-menu ul li ul li a:hover i,
+.category-page  .bg-white .sub-category-menu ul li ul li a:hover
+{
+  color: #ff5500;
+}
+.category-page  .bg-white .sub-category-menu ul li ul li a:hover{
+  padding-left: 7px;
+}
+.category-page  .bg-white .sub-category-menu{
+  margin-bottom: 47px;
+}
+.category-page  .bg-white .sub-category-menu:last-child{
+  margin-bottom: 0px;
+}
+.category-page  .bg-white .sub-category-menu .category-name{
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+/* Category Area End */
