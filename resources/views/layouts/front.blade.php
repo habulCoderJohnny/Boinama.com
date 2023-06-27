@@ -52,7 +52,7 @@
         $language = Session::has('language') ? App\Models\Language::findOrFail(Session::get('language')) : App\Models\Language::where('is_default', 1)->first();
     @endphp
     @if ($language->rtl == 1)
-        <link rel="stylesheet" href="{{ asset('assets/front/css/rtl/rtl.css') }}">
+        <link rel="stylesheet" href="{{ asset('/public/assets/front/css/rtl/rtl.css') }}">
     @endif
     <style>
         .wdfp {
@@ -71,25 +71,25 @@
         @if (url()->current() == route('front.index'))
         @else
             <div class="preloader" id="preloader"
-                style="background: url({{ asset('assets/images/' . $gs->loader) }}) no-repeat scroll center center #FFF;">
+                style="background: url({{ asset('public/assets/images/' . $gs->loader) }}) no-repeat scroll center center #FFF;">
             </div>
         @endif
     @endif
     <div class="xloader d-none" id="xloader"
-        style="background: url({{ asset('assets/front/images/xloading.gif') }}) no-repeat scroll center center #FFF;">
+        style="background: url({{ asset('public/assets/front/images/xloading.gif') }}) no-repeat scroll center center #FFF;">
     </div>
 
     @if ($gs->is_popup == 1)
 
         @if (isset($visited))
             <div style="display:none">
-                <img class="lazy" data-src="{{ asset('assets/images/' . $gs->popup_background) }}">
+                <img class="lazy" data-src="{{ asset('public/assets/images/' . $gs->popup_background) }}">
             </div>
 
             <!--  Starting of subscribe-pre-loader Area   -->
             <div class="subscribe-preloader-wrap" id="subscriptionForm" style="display: none;">
                 <div class="subscribePreloader__thumb"
-                    style="background-image: url({{ asset('assets/images/' . $gs->popup_background) }});">
+                    style="background-image: url({{ asset('public/assets/images/' . $gs->popup_background) }});">
                     <span class="preload-close"><i class="fas fa-times"></i></span>
                     <div class="subscribePreloader__text text-center">
                         <h1>{{ $gs->popup_title }}</h1>
@@ -189,7 +189,7 @@
                 <div class="col-lg-2 col-sm-6 col-5 remove-padding">
                     <div class="logo">
                         <a href="{{ route('front.index') }}">
-                            <img src="{{ asset('assets/images/' . $gs->logo) }}" alt="">
+                            <img src="{{ asset('public/assets/images/' . $gs->logo) }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -484,7 +484,7 @@
                     <div class="footer-info-area">
                         <div class="footer-logo">
                             <a href="{{ route('front.index') }}" class="logo-link">
-                                <img class="" src="{{ asset('assets/images/' . $gs->footer_logo) }}"
+                                <img class="" src="{{ asset('public/assets/images/' . $gs->footer_logo) }}"
                                     alt="">
                             </a>
                         </div>
@@ -578,7 +578,7 @@
                         <!--	<li>-->
                         <!--		<div class="post">-->
                         <!--		  <div class="post-img">-->
-                        <!--			<img class="lazy" style="width: 73px; height: 59px;" data-src="{{ asset('assets/images/blogs/' . $blog->photo) }}" alt="">-->
+                        <!--			<img class="lazy" style="width: 73px; height: 59px;" data-src="{{ asset('public/assets/images/blogs/' . $blog->photo) }}" alt="">-->
                         <!--		  </div>-->
                         <!--		  <div class="post-details">-->
                         <!--			<a href="{{ route('front.blogshow', $blog->id) }}">-->
@@ -834,7 +834,8 @@
         <div class="modal-dialog quickview-modal modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="submit-loader">
-                    <img class="lazy" data-src="{{ asset('assets/images/' . $gs->loader) }}" alt="">
+                    <img class="lazy" data-src="{{ asset('public/assets/images/' . $gs->loader) }}"
+                        alt="">
                 </div>
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -876,7 +877,7 @@
 
                     <div>
                         <div class="submit-loader d-none">
-                            <img class="lazy" data-src="{{ asset('assets/images/' . $gs->loader) }}"
+                            <img class="lazy" data-src="{{ asset('public/assets/images/' . $gs->loader) }}"
                                 alt="">
                         </div>
                         <div id="track-order">
@@ -897,7 +898,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content" style="max-width:700px;height:600px;">
                 <div class="submit-loader">
-                    <img src="{{ asset('assets/images/' . $gs->loader) }}" alt="">
+                    <img src="{{ asset('public/assets/images/' . $gs->loader) }}" alt="">
                 </div>
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalCenterTitle">{{ __('You may also like') }}</h5>
@@ -977,26 +978,26 @@
 
     <!-- jquery -->
 
-    <script src="{{ asset('assets/front/js/jquery.js') }}"></script>
-    <script src="{{ asset('assets/front/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/jquery.js') }}"></script>
+    <script src="{{ asset('public/assets/front/jquery-ui/jquery-ui.min.js') }}"></script>
     <!-- popper -->
-    <script src="{{ asset('assets/front/js/popper.min.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/popper.min.js') }}"></script>
     <!-- bootstrap -->
-    <script src="{{ asset('assets/front/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/bootstrap.min.js') }}"></script>
     <!-- plugin js-->
-    <script src="{{ asset('assets/front/js/plugin.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/plugin.js') }}"></script>
 
-    <script src="{{ asset('assets/front/js/xzoom.min.js') }}"></script>
-    <script src="{{ asset('assets/front/js/jquery.hammer.min.js') }}"></script>
-    <script src="{{ asset('assets/front/js/setup.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/front/js/lazy.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/front/js/lazy.plugin.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/xzoom.min.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/jquery.hammer.min.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/setup.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('public/assets/front/js/lazy.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('public/assets/front/js/lazy.plugin.js') }}"></script>
 
-    <script src="{{ asset('assets/front/js/toastr.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/toastr.js') }}"></script>
     <!-- main -->
-    <script src="{{ asset('assets/front/js/main.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/main.js') }}"></script>
     <!-- custom -->
-    <script src="{{ asset('assets/front/js/custom.js') }}"></script>
+    <script src="{{ asset('public/assets/front/js/custom.js') }}"></script>
 
 
     <script>
