@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -20,9 +21,8 @@ return new class extends Migration
             $table->timestamp('last_used_at')->nullable();
             $table->timestamp('expires_at')->nullable();
             $table->timestamps();
-
-            $table->index(['tokenable_type', 'tokenable_id'], 'personal_access_tokens_type_id_index', 'btree', 191);
         });
+        DB::statement('ALTER TABLE personal_access_tokens ADD INDEX personal_access_tokens_type_id_index (tokenable_type(191), tokenable_id)');
 
     }
 
