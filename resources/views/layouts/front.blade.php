@@ -30,19 +30,19 @@
         <title>{{ $gs->title }}</title>
     @endif
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/' . $gs->favicon) }}" />
-    <link rel="stylesheet" href="{{ asset('assets/front/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/login.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/toastr.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/custom.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/common.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/plugin.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('public/assets/images/' . $gs->favicon) }}" />
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/toastr.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/common.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/plugin.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/style.css') }}">
     @yield('styles')
-    <link rel="stylesheet" href="{{ asset('assets/front/css/product_details.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/new.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/common-responsive.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/front/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/product_details.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/new.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/common-responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/responsive.css') }}">
 
 
     <link rel="stylesheet"
