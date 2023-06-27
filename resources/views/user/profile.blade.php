@@ -1,19 +1,18 @@
 @extends('layouts.front')
 @section('styles')
-    <link rel="stylesheet" href="{{asset('assets/front/css/user.css')}}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/user.css') }}">
 @endsection
 @section('content')
-
-<section class="user-dashbord">
-    <div class="container">
-      <div class="row">
-        @include('includes.user-dashboard-sidebar')
-<div class="col-lg-8">
+    <section class="user-dashbord">
+        <div class="container">
+            <div class="row">
+                @include('includes.user-dashboard-sidebar')
+                <div class="col-lg-8">
                     <div class="user-profile-details">
                         <div class="account-info">
                             <div class="header-area">
                                 <h4 class="title">
-                                    {{__('Edit Profile') }}
+                                    {{ __('Edit Profile') }}
                                 </h4>
                             </div>
                             <div class="edit-info-area">
@@ -21,31 +20,31 @@
                                 <div class="body">
                                     <div class="edit-info-area-form">
                                         <div class="gocover"
-                                            style="background: url({{ asset('assets/images/'.$gs->loader) }}) no-repeat scroll center center rgba(45, 45, 45, 0.5);">
+                                            style="background: url({{ asset('public/assets/images/' . $gs->loader) }}) no-repeat scroll center center rgba(45, 45, 45, 0.5);">
                                         </div>
-                                        <form id="userform" action="{{route('user-profile-update')}}" method="POST"
+                                        <form id="userform" action="{{ route('user-profile-update') }}" method="POST"
                                             enctype="multipart/form-data">
 
                                             {{ csrf_field() }}
 
                                             @include('includes.admin.form-both')
                                             <div class="upload-img">
-                                                @if($user->is_provider == 1)
-                                                <div class="img"><img
-                                                        src="{{ $user->photo ? asset($user->photo):asset('assets/images/'.$gs->user_image) }}">
-                                                </div>
-                                                @else
-                                                <div class="img"><img
-                                                        src="{{ $user->photo ? asset('assets/images/users/'.$user->photo):asset('assets/images/'.$gs->user_image) }}">
-                                                </div>
-                                                @endif
-                                                @if($user->is_provider != 1)
-                                                <div class="file-upload-area">
-                                                    <div class="upload-file">
-                                                        <input type="file" name="photo" class="upload">
-                                                        <span>{{ __('Upload') }}</span>
+                                                @if ($user->is_provider == 1)
+                                                    <div class="img"><img
+                                                            src="{{ $user->photo ? asset($user->photo) : asset('public/assets/images/' . $gs->user_image) }}">
                                                     </div>
-                                                </div>
+                                                @else
+                                                    <div class="img"><img
+                                                            src="{{ $user->photo ? asset('public/assets/images/users/' . $user->photo) : asset('public/assets/images/' . $gs->user_image) }}">
+                                                    </div>
+                                                @endif
+                                                @if ($user->is_provider != 1)
+                                                    <div class="file-upload-area">
+                                                        <div class="upload-file">
+                                                            <input type="file" name="photo" class="upload">
+                                                            <span>{{ __('Upload') }}</span>
+                                                        </div>
+                                                    </div>
                                                 @endif
                                             </div>
                                             <div class="row">
@@ -78,13 +77,15 @@
                                                 </div>
 
                                                 <div class="col-lg-6">
-                                                    <select class="input-field" name="country" id="change_country" >
+                                                    <select class="input-field" name="country" id="change_country">
                                                         <option value="">{{ __('Select Country') }}</option>
                                                         @foreach (DB::table('countries')->get() as $data)
-                                                            <option value="{{ $data->country_name }}" data-href="{{route('select.country.state',[$data->id,$user->id])}}" {{ $user->country == $data->country_name ? 'selected' : '' }}>
+                                                            <option value="{{ $data->country_name }}"
+                                                                data-href="{{ route('select.country.state', [$data->id, $user->id]) }}"
+                                                                {{ $user->country == $data->country_name ? 'selected' : '' }}>
                                                                 {{ $data->country_name }}
                                                             </option>
-                                                         @endforeach
+                                                        @endforeach
                                                     </select>
                                                 </div>
 
@@ -94,17 +95,16 @@
                                                     <select class="input-field" name="state" id="set_state">
                                                     </select>
                                                 </div>
-                                                    <div class="col-lg-6">
-                                                            <input name="zip" type="text" class="input-field"
-                                                                placeholder="{{ __('Zip') }}" value="{{ $user->zip }}">
-                                                    </div>
+                                                <div class="col-lg-6">
+                                                    <input name="zip" type="text" class="input-field"
+                                                        placeholder="{{ __('Zip') }}" value="{{ $user->zip }}">
+                                                </div>
                                             </div>
 
 
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <textarea class="input-field" name="address" required=""
-                                                        placeholder="{{ __('Address') }}">{{ $user->address }}</textarea>
+                                                    <textarea class="input-field" name="address" required="" placeholder="{{ __('Address') }}">{{ $user->address }}</textarea>
                                                 </div>
                                             </div>
 
@@ -118,8 +118,7 @@
                         </div>
                     </div>
                 </div>
-      </div>
-    </div>
-  </section>
-
+            </div>
+        </div>
+    </section>
 @endsection

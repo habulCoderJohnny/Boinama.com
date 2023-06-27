@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('assets/front/css/product_details.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/product_details.css') }}">
 @endsection
 @section('content')
     @php
@@ -154,7 +154,7 @@ elseif (!empty($productt->category->category_relation)) {
       return $query->whereRaw('MATCH (name) AGAINST (? IN BOOLEAN MODE)' , array($term));
     })
     ->whereNotIn('id', $crossIds)->count();
-                                                                                                                                                                                                                                                                            */
+                                                                                                                                                                                                                                                                                    */
             }
         }
         
@@ -169,26 +169,26 @@ elseif (!empty($productt->category->category_relation)) {
 
                             <div class="xzoom-container">
                                 <img class="xzoom5" id="xzoom-magnific"
-                                    src="{{ asset('assets/images/products/' . $productt->photo) }}" />
+                                    src="{{ asset('public/assets/images/products/' . $productt->photo) }}" />
                                 {{--
                                 <img class="xzoom5" id="xzoom-magnific"
-                                    src="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('assets/images/products/' . $productt->photo) }}"
-                                    xoriginal="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('assets/images/products/' . $productt->photo) }}" />
+                                    src="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('public/assets/images/products/' . $productt->photo) }}"
+                                    xoriginal="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('public/assets/images/products/' . $productt->photo) }}" />
 
                                 <div class="xzoom-thumbs">
 
                                     <div class="all-slider">
                                         <a
-                                            href="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('assets/images/products/' . $productt->photo) }}">
+                                            href="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('public/assets/images/products/' . $productt->photo) }}">
                                             <img class="xzoom-gallery5" width="80"
-                                                src="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('assets/images/products/' . $productt->photo) }}"
+                                                src="{{ filter_var($productt->photo, FILTER_VALIDATE_URL) ? $productt->photo : asset('public/assets/images/products/' . $productt->photo) }}"
                                                 title="The description goes here">
                                         </a>
 
                                         @foreach ($productt->galleries as $gal)
-                                            <a href="{{ asset('assets/images/galleries/' . $gal->photo) }}">
+                                            <a href="{{ asset('public/assets/images/galleries/' . $gal->photo) }}">
                                                 <img class="xzoom-gallery5" width="80"
-                                                    src="{{ asset('assets/images/galleries/' . $gal->photo) }}"
+                                                    src="{{ asset('public/assets/images/galleries/' . $gal->photo) }}"
                                                     title="The description goes here">
                                             </a>
                                         @endforeach
@@ -632,7 +632,7 @@ elseif (!empty($productt->category->category_relation)) {
                                                             <li>
                                                                 <div class="single-review">
                                                                     <div class="left-area">
-                                                                        <img src="{{ $review->user->photo ? asset('assets/images/users/' . $review->user->photo) : asset('assets/images/noimage.png') }}"
+                                                                        <img src="{{ $review->user->photo ? asset('public/assets/images/users/' . $review->user->photo) : asset('public/assets/images/noimage.png') }}"
                                                                             alt="">
                                                                         <h5 class="name">{{ $review->user->name }}</h5>
                                                                         <p class="date">
@@ -701,7 +701,7 @@ elseif (!empty($productt->category->category_relation)) {
                                                 </div>
                                                 <div class="write-comment-area" style="display:none">
                                                     <div class="gocover"
-                                                        style="background: url({{ asset('assets/images/' . $gs->loader) }}) no-repeat scroll center center rgba(45, 45, 45, 0.5);">
+                                                        style="background: url({{ asset('public/assets/images/' . $gs->loader) }}) no-repeat scroll center center rgba(45, 45, 45, 0.5);">
                                                     </div>
                                                     <form id="reviewform" action="{{ route('front.review.submit') }}"
                                                         data-href="{{ route('front.reviews', $productt->id) }}"
@@ -953,7 +953,7 @@ elseif (!empty($productt->category->category_relation)) {
                         <div class="modal-body">
 
                             <div class="gocover"
-                                style="background: url({{ asset('assets/images/' . $gs->loader) }}) no-repeat scroll center center rgba(45, 45, 45, 0.5);">
+                                style="background: url({{ asset('public/assets/images/' . $gs->loader) }}) no-repeat scroll center center rgba(45, 45, 45, 0.5);">
                             </div>
 
                             <div class="login-area">

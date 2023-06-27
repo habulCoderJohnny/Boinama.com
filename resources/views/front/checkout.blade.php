@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('assets/front/css/checkout.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/checkout.css') }}">
     <style type="text/css">
         .root.root--in-iframe {
             background: #4682b447 !important;
@@ -309,7 +309,7 @@
                                                     <div class="order-item">
                                                         <div class="product-img">
                                                             <div class="d-flex">
-                                                                <img src=" {{ asset('assets/images/products/' . $product['item']['photo']) }}"
+                                                                <img src=" {{ asset('public/assets/images/products/' . $product['item']['photo']) }}"
                                                                     height="80" width="80" class="p-1">
                                                             </div>
                                                         </div>
@@ -634,7 +634,7 @@
                                 <div class="cupon-box">
 
                                     <div id="coupon-link">
-                                        <img src="{{ asset('assets/front/images/tag.png') }}">
+                                        <img src="{{ asset('public/assets/front/images/tag.png') }}">
                                         {{ __('Have a promotion code?') }}
                                     </div>
 
@@ -868,7 +868,7 @@
                                                 <ul class="captcha-area">
                                                     <li>
                                                         <p><img class="codeimg1"
-                                                                src="{{ asset('assets/images/capcha_code.png') }}"
+                                                                src="{{ asset('public/assets/images/capcha_code.png') }}"
                                                                 alt=""> <i
                                                                 class="fas fa-sync-alt pointer refresh_code "></i></p>
                                                     </li>

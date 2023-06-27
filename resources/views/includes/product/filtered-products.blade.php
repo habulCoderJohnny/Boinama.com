@@ -133,7 +133,7 @@ elseif (!empty($prod->category->category_relation)) {
                     @endif
 
                     <img class="img-fluid lazy"
-                        data-src="{{ $prod->thumbnail ? asset('assets/images/thumbnails/' . $prod->thumbnail) : asset('assets/images/noimage.png') }}"
+                        data-src="{{ $prod->thumbnail ? asset('public/assets/images/thumbnails/' . $prod->thumbnail) : asset('public/assets/images/noimage.png') }}"
                         alt="">
                 </div>
                 <div class="info">

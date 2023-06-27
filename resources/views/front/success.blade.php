@@ -2,7 +2,7 @@
 
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('assets/front/css/checkout.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/checkout.css') }}">
 @endsection
 
 

@@ -110,7 +110,7 @@ elseif (!empty($prod->category->category_relation)) {
 											return $query->whereRaw('MATCH (name) AGAINST (? IN BOOLEAN MODE)' , array($term));
 										})
 										->whereNotIn('id', $crossIds)->count();
-                                                                                                                                                                                                                                        */
+                                                                                                                                                                                                                                                    */
                 }
             }
             
@@ -136,7 +136,7 @@ elseif (!empty($prod->category->category_relation)) {
                             @endif
 
                             <img class="img-fluid lazy"
-                                data-src="{{ $prod->thumbnail ? asset('assets/images/thumbnails/' . $prod->thumbnail) : asset('assets/images/noimage.png') }}"
+                                data-src="{{ $prod->thumbnail ? asset('public/assets/images/thumbnails/' . $prod->thumbnail) : asset('public/assets/images/noimage.png') }}"
                                 alt="">
                         </div>
                         <div class="info">
@@ -218,7 +218,7 @@ elseif (!empty($prod->category->category_relation)) {
                             @endif
 
                             <img class="img-fluid lazy"
-                                data-src="{{ $prod->thumbnail ? asset('assets/images/thumbnails/' . $prod->thumbnail) : asset('assets/images/noimage.png') }}"
+                                data-src="{{ $prod->thumbnail ? asset('public/assets/images/thumbnails/' . $prod->thumbnail) : asset('public/assets/images/noimage.png') }}"
                                 alt="">
                         </div>
                         <div class="info">
@@ -335,7 +335,7 @@ elseif (!empty($prod->category->category_relation)) {
                         <!--	</ul>-->
                         <!--</div>-->
                         <img class="img-fluid lazy"
-                            data-src="{{ $prod->thumbnail ? asset('assets/images/thumbnails/' . $prod->thumbnail) : asset('assets/images/noimage.png') }}"
+                            data-src="{{ $prod->thumbnail ? asset('public/assets/images/thumbnails/' . $prod->thumbnail) : asset('public/assets/images/noimage.png') }}"
                             alt="">
                     </div>
                     <div class="info">
@@ -443,7 +443,7 @@ elseif (!empty($prod->category->category_relation)) {
                         <!--	</ul>-->
                         <!--</div>-->
                         <img class="img-fluid lazy"
-                            data-src="{{ $prod->thumbnail ? asset('assets/images/thumbnails/' . $prod->thumbnail) : asset('assets/images/noimage.png') }}"
+                            data-src="{{ $prod->thumbnail ? asset('public/assets/images/thumbnails/' . $prod->thumbnail) : asset('public/assets/images/noimage.png') }}"
                             alt="">
                     </div>
                     <div class="info">

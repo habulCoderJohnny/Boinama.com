@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('assets/front/css/range.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/front/css/range.css') }}">
 @endsection
 @section('content')
     <!-- Breadcrumb Area Start -->
@@ -53,7 +53,7 @@
                                 @include('includes.product.filtered-products')
                             </div>
                             <div id="ajaxLoader" class="ajax-loader"
-                                style="background: url({{ asset('assets/images/' . $gs->loader) }}) no-repeat scroll center center rgba(0,0,0,.6);">
+                                style="background: url({{ asset('public/assets/images/' . $gs->loader) }}) no-repeat scroll center center rgba(0,0,0,.6);">
                             </div>
                         </div>
                     </div>
