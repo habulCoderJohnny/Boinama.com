@@ -11,7 +11,6 @@
         "php": "^8.1",
         "anhskohbo/no-captcha": "^3.5",
         "authorizenet/authorizenet": "^2.0",
-        "barryvdh/laravel-debugbar": "^3.8",
         "barryvdh/laravel-dompdf": "^2.0",
         "buglinjo/laravel-webp": "^2.3",
         "cartalyst/stripe-laravel": "^15.0",
