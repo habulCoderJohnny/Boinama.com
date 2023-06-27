@@ -67,7 +67,7 @@
 
                                     @foreach ($sliders as $data)
                                         <div class="intro-content {{ $data->position }} lazy"
-                                            data-src="{{ asset('assets/images/sliders/' . $data->photo) }}">
+                                            data-src="{{ asset('public/assets/images/sliders/' . $data->photo) }}">
                                             <div>
                                                 <div class="row">
                                                     <div class="col-lg-12">
@@ -109,11 +109,11 @@
             @endif
             <!--<div class="hero-right-area">-->
             <!--    <a href="{{ $ps->slider_right_banner_link }}" class="banner banner1">-->
-            <!--        <div class="img" style="background-image: url({{ $ps->slider_right_banner1 ? asset('assets/images/' . $ps->slider_right_banner1) : asset('assets/images/noimage.png') }})"></div>-->
+            <!--        <div class="img" style="background-image: url({{ $ps->slider_right_banner1 ? asset('public/assets/images/' . $ps->slider_right_banner1) : asset('public/assets/images/noimage.png') }})"></div>-->
 
             <!--    </a>-->
             <!--    <a href="{{ $ps->slider_right_banner_link1 }}" class="banner banner2">-->
-            <!--        <div class="img" style="background-image: url({{ $ps->slider_right_banner2 ? asset('assets/images/' . $ps->slider_right_banner2) : asset('assets/images/noimage.png') }})"></div>-->
+            <!--        <div class="img" style="background-image: url({{ $ps->slider_right_banner2 ? asset('public/assets/images/' . $ps->slider_right_banner2) : asset('public/assets/images/noimage.png') }})"></div>-->
             <!--    </a>-->
             <!--</div>-->
 
@@ -132,7 +132,8 @@
                             <a href="{{ route('front.category', $cat->slug) }}" class="single-category">
 
                                 <div class="right">
-                                    <img class="lazy" data-src="{{ asset('assets/images/categories/' . $cat->image) }}"
+                                    <img class="lazy"
+                                        data-src="{{ asset('public/assets/images/categories/' . $cat->image) }}"
                                         alt="">
                                 </div>
                                 <div class="left">
@@ -153,7 +154,7 @@
 
     <section id="extraData">
         <div class="text-center">
-            <img src="{{ asset('assets/images/' . $gs->loader) }}">
+            <img src="{{ asset('public/assets/images/' . $gs->loader) }}">
         </div>
     </section>
 
