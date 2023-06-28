@@ -156,8 +156,18 @@ class CatalogController extends Controller
                 }
             }
         });
-        $productId = ProductChildCategory::where('childcategory_id', $data['childcat']->id)->pluck('product_id')->toArray();
-        $prods = Product::whereIn('id', $productId)->get();
+        $productId = ProductChildCategory::query();
+
+        if (!empty($data['childcat'])) {
+            $productId = $productId->where('childcategory_id', $cat->id)->pluck('product_id')->toArray();
+        }
+        // $productId = ProductChildCategory::where('childcategory_id', $data['childcat']->id)->pluck('product_id')->toArray();
+        $productId = array_unique($productId);
+        $prods = Product::query();
+        if (!empty($productId)) {
+            $prods = $prods->whereIn('id', $productId)->get();
+        }
+        // <!-- $prods = Product::whereIn('id', $productId)->get(); -->
         $prods = (new Collection(Product::filterProducts($prods)))->paginate(12);
         $data['prods'] = $prods;
         if ($request->ajax()) {
