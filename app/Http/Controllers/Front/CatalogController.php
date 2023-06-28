@@ -159,14 +159,21 @@ class CatalogController extends Controller
         $productId = ProductChildCategory::query();
 
         if (!empty($data['childcat'])) {
-            $productId = $productId->where('childcategory_id', $data['childcat'])->pluck('product_id')->toArray();
-            $productId = array_unique($productId);
+            $productId = $productId->where('childcategory_id', $data['childcat'])->pluck('product_id');
         }
-        // $productId = ProductChildCategory::where('childcategory_id', $data['childcat']->id)->pluck('product_id')->toArray();
+        $productId = $productId->get()->toArray();
+
+// $productId = ProductChildCategory::where('childcategory_id', $data['childcat']->id)->pluck('product_id')->toArray();
         $prods = Product::query();
         if (!empty($productId)) {
-            $prods = $prods->whereIn('id', $productId)->get();
+            $prods = $prods->whereIn('id', $productId);
         }
+        if ($prods->count() > 0) {
+            $prods = $prods->get();
+        } else {
+            $prods = collect([]);
+        }
+
         // <!-- $prods = Product::whereIn('id', $productId)->get(); -->
         $prods = (new Collection(Product::filterProducts($prods)))->paginate(12);
         $data['prods'] = $prods;
