@@ -160,9 +160,9 @@ class CatalogController extends Controller
 
         if (!empty($data['childcat'])) {
             $productId = $productId->where('childcategory_id', $cat->id)->pluck('product_id')->toArray();
+            $productId = array_unique($productId);
         }
         // $productId = ProductChildCategory::where('childcategory_id', $data['childcat']->id)->pluck('product_id')->toArray();
-        $productId = array_unique($productId);
         $prods = Product::query();
         if (!empty($productId)) {
             $prods = $prods->whereIn('id', $productId)->get();
